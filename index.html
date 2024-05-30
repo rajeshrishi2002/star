@@ -137,9 +137,10 @@ function Star() {
     this.y += this.dy;
     if (this.fadingOut === false) {
       this.reset();
+        audio.play();
     }
     else{
-        audio.play();
+        
     }
     if (this.x > width - (width / 4) || this.y < 0) {
       this.fadingOut = true;
